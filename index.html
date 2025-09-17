@@ -16,11 +16,15 @@
             FOOD RECIPES
           </div>
           <div class="right-section">
-            <ul>
+            <button class="hamburger" id="hamburger">
+                <img src="images/icon-hamburger.svg" class="open" alt="icon-hamburger">
+                <img src="images/icon-close.svg" class="close" alt="ico-close">
+            </button>
+            <ul id="menu">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Recipes</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -32,10 +36,14 @@
       <div class="wrapper">
         <div class="featured-recipe">
           <h1>Spaghetti<br>Carbonara</h1>
-          <button>View Recipe</button>
+          <div>
+              <a href="./recipes.html">View Recipe</a>
+          </div>
         </div>
         <div class="featured-img">
-          <img src="images/spaghetti.png" alt="Spaghetti Carbonara">
+          <div class="img-shadow">
+              <img  src="images/spaghetti.png" alt="Spaghetti Carbonara">
+          </div>  
         </div>
       </div>
 
@@ -75,22 +83,22 @@
     <nav class="cat-list" aria-label="Categories">
       <button class="cat-btn" aria-label="Desserts">
         <span class="cat-title">Desserts</span>
-        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+        <a href="./contact.html"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/>
-        </svg>
+        </svg></a>
       </button>
 
       <button class="cat-btn" aria-label="Vegan">
         <span class="cat-title">Vegan</span>
-        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+        <a href="./contact.html"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/>
-        </svg>
+        </svg></a>
       </button>
 
       <button class="cat-btn" aria-label="Gluten-Free">
         <span class="cat-title">Gluten-Free</span>
-        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/>
+        <a href="./contact.html"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/></svg>
         </svg>
       </button>
 
@@ -99,9 +107,9 @@
           <span class="cat-title">Healthy</span>
           <!-- <span class="health-dot" aria-hidden="true"></span> -->
         </span>
-        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+        <a href="./contact.html"><svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
           <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/>
-        </svg>
+        </svg></a>
       </button>
     </nav>
 
@@ -132,3 +140,7 @@
       </article>
     </section>
   </aside>
+
+<script src="./recipes.js" type="text/javascript"></script>
+</body>
+</html>
