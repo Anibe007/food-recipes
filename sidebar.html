@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Sidebar</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <aside class="sidebar" role="complementary" aria-label="Recipe sidebar">
+    <h2>Categories</h2>
+
+    <nav class="cat-list" aria-label="Categories">
+      <button class="cat-btn" aria-label="Desserts">
+        <span class="cat-title">Desserts</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/>
+        </svg>
+      </button>
+
+      <button class="cat-btn" aria-label="Vegan">
+        <span class="cat-title">Vegan</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/>
+        </svg>
+      </button>
+
+      <button class="cat-btn" aria-label="Gluten-Free">
+        <span class="cat-title">Gluten-Free</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/>
+        </svg>
+      </button>
+
+      <button class="cat-btn with-dot" aria-label="Healthy">
+        <span class="left">
+          <span class="cat-title">Healthy</span>
+          <span class="health-dot" aria-hidden="true"></span>
+        </span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M8.7 5.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 1 1-1.4-1.4L13.58 12 8.7 7.12a1 1 0 0 1 0-1.82z"/>
+        </svg>
+      </button>
+    </nav>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <h3 class="subhead">Most Popular</h3>
+
+    <section class="popular" aria-label="Most Popular Recipes">
+      <article class="pop-item">
+        <div class="thumb">
+          <div class="food-block lemon" role="img" aria-label="Lemon bar"></div>
+        </div>
+        <div class="details">Lemon<br/>Bars</div>
+      </article>
+
+      <article class="pop-item">
+        <div class="thumb">
+          <div class="food-block pepper" role="img" aria-label="Stuffed pepper"></div>
+        </div>
+        <div class="details">Stuffed<br/>Peppers</div>
+      </article>
+
+      <article class="pop-item">
+        <div class="thumb">
+          <div class="food-block banana" role="img" aria-label="Banana bread"></div>
+        </div>
+        <div class="details">Banana<br/>Bread</div>
+      </article>
+    </section>
+  </aside>
+</body>
+</html>

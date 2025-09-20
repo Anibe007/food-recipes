@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  /*max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;*/
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #F1851B;
+}
+
+.left-section {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #F7922A;
+}
+
+.right-section a.active,
+.right-section a:hover {
+  color: #F7922A;
+}
+
+/* Recipe Hero */
+.recipe-hero {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.recipe-hero img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.recipe-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #5C4D4C;
+}
+
+.recipe-hero .intro {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Ingredients */
+.ingredients, .instructions {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ingredients h2, .instructions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #5C4D4C;
+}
+
+.ingredients ul {
+  list-style: disc inside;
+  font-size: 1.05rem;
+}
+
+.instructions ol {
+  list-style: decimal inside;
+  font-size: 1.05rem;
+}
+
+.instructions li {
+  margin-bottom: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recipe-hero h1 {
+    font-size: 2rem;
+  }
+  .recipe-hero img {
+    max-width: 100%;
+  }
+  .ingredients h2, .instructions h2 {
+    font-size: 1.5rem;
+  }
+
+  .left-section {
+    display: none;
+  }
+}
