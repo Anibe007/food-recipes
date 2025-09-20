@@ -390,6 +390,10 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
+  .wrapper{
+    flex-direction: row;
+  }
   .featured-img img {
     max-width: 220px;
   }
@@ -443,9 +447,6 @@ footer {
         right: 0;
         background-color: var(--panel);
         color: #fff;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
 
     .content-section {
